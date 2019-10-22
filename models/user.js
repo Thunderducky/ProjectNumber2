@@ -8,6 +8,10 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
+    isAdmin: {
+      type: DataTypes.BOOLEAN,
+      default: false
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
